@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 30px;
+}
+
+body {
+  
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 8px solid #050505d8;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+}
+
+.navlinks li:not(:last-child) {
+  margin-right: 20px;
+}
+
+
+.navlinks a {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navlinks a:hover {
+  color: #f7484e;
+}
+
+.back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+}
+/* Hero Section Styles */
+
+.hero {
+  height: calc(100vh - 4em);
+  min-height: 500px;
+  position: relative;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #f7484e;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.cta-btn:hover {
+  background-color: #fff;
+  color: #f7484e;
+}
+
+/* About Us Section Styles */
+
+.about-us {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  background-color: #f3f3f3;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  border-radius: 30px;
+}
+
+.about-text {
+  text-align: center;
+}
+
+/* Classes Section Styles */
+
+.classes {
+  padding: 2em;
+  text-align: center;
+}
+
+.class-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.class-card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.class-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+  
+}
+
+/* Trainers Section Styles */
+
+.trainers {
+  padding: 2em;
+  text-align: center;
+}
+
+.trainer-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.trainer-card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.trainer-img {
+  height: auto;
+  margin-bottom: 1em;
+}
+
+/* Membership Section Styles */
+
+.membership {
+  padding: 2em;
+  text-align: center;
+}
+
+.membership-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+}
+
+.membership-card {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.membership-card h3 {
+  color: #f7484e;
+  margin-bottom: 0.5em;
+}
+
+.membership-card p {
+  margin-bottom: 1em;
+}
+
+.membership-card h4 {
+  font-size: 2em;
+  color: #f7484e;
+  margin-bottom: 1em;
+}
+
+/* Contact Section Styles */
+
+.contact {
+  padding: 2em;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.contact-form textarea {
+  height: 120px;
+}
+
+.contact-form button[type="submit"] {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #f7484e;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #fff;
+  color: #f7484e;
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  margin-top: 1em;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.footer-links a {
+  color: #fff;
+  font-size: 1.2em;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #f7484e;
+}
+
+.footer p {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 4em;
+    border-radius: 30px;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .navlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .navlinks li {
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+
+  .hero {
+    height: calc(100vh - 6em);
+  }
+
+  .hero-content h1 {
+    font-size: 5em;
+  }
+
+  .hero-content p {
+    font-size: 1.5em;
+  }
+
+  .about-us {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-img {
+    width: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.5);
+  }
+
+  .about-text {
+    width: 60%;
+    text-align: left;
+  }
+
+  .class-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .class-card {
+    width: 100%;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.671);
+  }
+
+  .trainer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .trainer-card {
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.671);
+  }
+
+  .membership-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .membership-card {
+    width: 100%;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.877);
+  }
+}
